@@ -1,0 +1,159 @@
+<section class="lesson" id="task2-informatics">
+  <div class="lesson-description">
+    <h3>Краткие сведения</h3>
+    <p>Как выглядят знаки из задания в Python:</p>
+    <div class="table-container">
+      <table class="truth-table">
+        <thead>
+          <tr>
+            <th>∨ это or</th>
+            <th>∧ это and</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>x ∨ y</td>
+            <td>x ∧ y</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="lesson-note">
+      <h4>Типичная формулировка задания:</h4>
+      <p>
+        "Логическая функция F задаётся выражением (¬x ∧ y ∧ z) ∨ (¬x ∧ ¬y ∧ z) ∨
+      </p>
+    </div>
+  </div>
+
+  <div class="lesson-content">
+    <h3>Методы решения</h3>
+
+    <div class="method-card">
+      <h4>Метод 1: Прямое вычисление с помощью Python</h4>
+      <p>Используем цикл for в Python</p>
+
+      <div class="code-block">
+        <h4>Задача 1</h4>
+        <p>Миша заполнял</p>
+        <div class="code-wrapper">
+          <pre><code class="language-python"># Решение задачи 1
+print('x y w z') #шапка таблицы
+
+# 4 цикла для перебора значений 0 и 1 переменных x y w z 
+for x in 0,1:
+  for y in 0,1:
+    for w in 0,1:
+      for z in 0,1:
+        f = ((x or y) <= z) or (y == w) or z #логическая формула
+        if f == 0: #проверяем, что формула вернет нам 0
+          print(x,y,w,z) #печатаем значения переменных, если формула вернула 0</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice-section">
+    <h3>Практические задачи для самостоятельного решения</h3>
+
+    <div class="problem-card">
+      <h4>Задача 1</h4>
+      <p>Дан фрагмент таблицы истинности:</p>
+      <div class="table-container">
+        <table class="truth-table">
+          <thead>
+            <tr>
+              <th>Столбец 1</th>
+              <th>Столбец 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      <p>Определите, какому столбцу</p>
+      <button class="solution-toggle">Показать решение</button>
+      <div class="solution-code">
+        <div class="code-wrapper">
+          <pre><code class="language-python"># Решение задачи 1
+def F(x, y, z, w):
+    return (not (not x or y)) or (z == w)
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lesson-tips">
+    <h3>Советы для решения задания №2</h3>
+    <ol class="tips-list">
+      <li>
+        <strong>Внимательно читайте условие</strong> - определите, какие именно
+        строки даны в таблице (где F=1 или где F=0)
+      </li>
+      <li>
+        <strong>Проверяйте все перестановки</strong> - используйте
+        itertools.permutations для полного перебора
+      </li>
+    </ol>
+  </div>
+  <div class="code-wrapper">
+    <pre><code class="language-python"></code></pre>
+  </div>
+  <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Инициализация Prism для подсветки кода
+            if (typeof Prism !== 'undefined') {
+                Prism.highlightAll();
+            }
+            
+            // Обработка кнопок показа решения
+            const toggleButtons = document.querySelectorAll('.solution-toggle');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const solution = this.nextElementSibling;
+                    if (solution.style.display === 'block') {
+                        solution.style.display = 'none';
+                        this.textContent = 'Показать решение';
+                    } else {
+                        solution.style.display = 'block';
+                        this.textContent = 'Скрыть решение';
+                        
+                        // Подсветка кода в решении, если Prism доступен
+                        if (typeof Prism !== 'undefined') {
+                            Prism.highlightAllUnder(solution);
+                        }
+                    }
+                });
+            });
+            
+            // Динамическая адаптация размера шрифта для очень длинных строк кода
+            function adjustCodeFontSize() {
+                const codeWrappers = document.querySelectorAll('.code-wrapper');
+                const screenWidth = window.innerWidth;
+                
+                codeWrappers.forEach(wrapper => {
+                    const codeElement = wrapper.querySelector('code');
+                    if (codeElement) {
+                        const codeWidth = codeElement.scrollWidth;
+                        const wrapperWidth = wrapper.clientWidth;
+                        
+                        if (codeWidth > wrapperWidth * 1.5 && screenWidth < 768) {
+                            wrapper.style.fontSize = '0.8rem';
+                        }
+                    }
+                });
+            }
+            
+            // Вызываем при загрузке и изменении размера окна
+            adjustCodeFontSize();
+            window.addEventListener('resize', adjustCodeFontSize);
+        });
+    </script> -->
+</section>

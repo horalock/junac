@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Подготовка к ЕГЭ - Информатика</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/multi-col.css" />
+    <link rel="stylesheet" href="/css/content.css" />
+    <link rel="stylesheet" href="/css/premade.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="ju_container">
+        <div class="heading df">
+          <a href="/pages/books/books.html">Назад</a>
+
+          <a
+            href="/pages/information/lessons/self-study.html"
+            rel="noopener noreferrer"
+            >Самообучение</a
+          >
+          <a href="/pages/guides.html" rel="noopener noreferrer">Полигон</a>
+
+          <!-- <a href="/pages/login/login.html">Вход</a> -->
+        </div>
+      </div>
+
+        <div class="search-box">
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Поиск по темам..." 
+            autocomplete="off"
+          />
+          <button id="clear-search" class="search-clear">✕</button>
+        </div>
+
+      <div class="ju_container">
+        <div class="instructions df w100" id="topics-container">
+          <!-- Содержимое будет загружено через JS -->
+        </div>
+      </div>
+
+      <a href="#" id="scroll-top">
+        <div class="heading df fixed-bot flex-cen_cen">^ Вверх ^</div>
+      </a>
+    </main>
+
+    <script type="module">
+      import { initSubjectTopics } from '/js/books/subjectTopicsLoader.js';
+      initSubjectTopics('#topics-container', 'egecs');
+    </script>
+    <script src="/js/logic/goTopAnimation.js"></script>
+  </body>
+</html>

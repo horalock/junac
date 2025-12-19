@@ -1,0 +1,24 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "title": "1 Уровень",
+      "topics": [
+        {
+          "id": "cpp-basics-1",
+          "title": "Основы C++",
+          "caption": "Синтаксис; переменные; типы данных",
+          "grade": "4 класс",
+          "contentPath": "/data/books/cpp/content/cpp-basics-1.html"
+        },
+        {
+          "id": "cpp-io-1",
+          "title": "Ввод и вывод",
+          "caption": "cout; cin; форматирование",
+          "grade": "4 класс",
+          "contentPath": "/data/books/cpp/content/cpp-io-1.html"
+        }
+      ]
+    }
+  ]
+}

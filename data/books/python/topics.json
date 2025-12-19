@@ -1,0 +1,24 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "title": "1 Уровень",
+      "topics": [
+        {
+          "id": "python-basics-1",
+          "title": "Основы Python",
+          "caption": "Что такое Python; переменные; типы данных",
+          "grade": "3 класс",
+          "contentPath": "/data/books/python/content/python-basics-1.html"
+        },
+        {
+          "id": "python-io-1",
+          "title": "Ввод и вывод данных",
+          "caption": "print(); input(); работа с текстом",
+          "grade": "3 класс",
+          "contentPath": "/data/books/python/content/python-io-1.html"
+        }
+      ]
+    }
+  ]
+}

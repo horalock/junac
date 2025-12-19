@@ -1,0 +1,12 @@
+{
+  "title": "Примерный набор вопросов",
+  "questions": [
+    { "q": "30 ÷ 10 =", "a": "3" },
+    { "q": "Сколько десятков в 50?", "a": "5" },
+    { "q": "90 ÷ 10 =", "a": "9" }
+  ],
+  "links": [
+    { "title": "Теория: деление на десятки", "href": "/pages/books/math/lvl-1-numbers-count-1.html", "external": false },
+    { "title": "Видео-разбор", "href": "https://youtu.be/example", "external": true, "rel": "noopener noreferrer" }
+  ]
+}

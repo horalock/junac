@@ -1,0 +1,24 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "title": "1 Уровень",
+      "topics": [
+        {
+          "id": "web-html-1",
+          "title": "HTML - основы",
+          "caption": "Теги; структура страницы; семантика",
+          "grade": "4 класс",
+          "contentPath": "/data/books/web/content/web-html-1.html"
+        },
+        {
+          "id": "web-css-1",
+          "title": "CSS - стилизация",
+          "caption": "Селекторы; свойства; цвета; шрифты",
+          "grade": "4 класс",
+          "contentPath": "/data/books/web/content/web-css-1.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title id="page-title">Тренажёр</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/gym.css" />
+    <link rel="stylesheet" href="/css/premade.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+    <style>
+      /* минимальные локальные стили для удобства */
+      .tests { max-width: 900px; margin: 1.5rem auto; }
+      #test-area { display:block; min-height:5rem; padding:1rem; border:1px solid #ddd; border-radius:6px; background:#fff; font-size:1.15rem; margin-bottom:1rem; }
+      .test-control { gap:0.75rem; }
+      .test-answer-row { align-items:center; gap:0.75rem; }
+      #intup-answer-field { flex:1; padding:0.6rem; font-size:1rem; border:1px solid #ccc; border-radius:6px; }
+      .like-box { width:64px; text-align:center; }
+      .control-buttons button { padding:0.6rem 1rem; font-size:1rem; border-radius:6px; }
+    
+      .additional-links { margin-top:1.25rem; padding:0.75rem; border-top:1px dashed #e0e0e0; }
+      .additional-links h3 { margin:0 0 0.5rem 0; font-size:1rem; }
+      .additional-links ul { margin:0; padding-left:1.25rem; }
+      .additional-links a { color:var(--link-color,#0077cc); text-decoration:underline; }
+    </style>
+  </head>
+
+  <body id="gym-topic">
+    <main>
+      <div class="ju_container">
+        <div class="heading df">
+          <a id="back-link" href="/pages/gyms/gyms.html">Назад11</a>
+          <a href="/pages/guides.html">Начало</a>
+        </div>
+      </div>
+
+      <div class="ju_container">
+        <div class="tests df flex-col">
+          <h1 id="gym-title">Тренажёр</h1>
+
+          <!-- поле текстовое для отображения задания -->
+          <span id="test-area" class="quest">Загрузка задания...</span>
+
+          <!-- контролы: счетчики, поле ответа, кнопки -->
+          <div class="test-control flex-col">
+            <div class="test-answer-row df">
+              <div class="like-box like-box-correct flex-col flex-cen_cen">
+                <span id="correct-answer">0</span>
+                <img class="img50 ico" src="/assets/img/like_ico.svg" alt="" />
+              </div>
+
+              <!-- поле для ввода ответа учеником -->
+              <input id="intup-answer-field" type="text" placeholder="Введите ответ" autocomplete="off" />
+
+              <div class="like-box like-box-wrong flex-col flex-cen_cen">
+                <span id="wrong-answer">0</span>
+                <img class="img50 ico" src="/assets/img/dislike_ico.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="control-buttons df" style="margin-top:0.75rem;">
+              <button id="check-test-btn">Проверить</button>
+            </div>
+            <div id="additional-links" class="additional-links" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="heading df fixed-bot flex-cen_cen" id="scroll-top">
+        <a href="#">^ Вверх ^</a>
+      </div>
+    </main>
+
+    <script src="/js/gyms/testRunner.js"></script>
+    <script src="/js/logic/goTopAnimation.js"></script>
+  </body>
+</html>

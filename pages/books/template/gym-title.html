@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Математика | сложение и вычитание обыкновенных дробей</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/gym.css" />
+    <link rel="stylesheet" href="/css/premade.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+  </head>
+
+  <body id="m5-arithmetic-fractions">
+    <main>
+      <div class="ju_container">
+        <div class="heading df">
+          <a id="goBackLink" href="">К теме</a>
+          <a id="toGymLink" href="">В тренажеры</a>
+          <a href="/pages/guides.html">Начало</a>
+          <a href="/pages/login/login.html">Вход</a>
+        </div>
+      </div>
+      <div class="ju_container">
+        <div class="tests df flex-col">
+          <h1 id="gymId"></h1>
+          <span id="test-area"></span>
+          <div class="test-control flex-col">
+            <div class="test-answer-row df">
+              <div class="like-box like-box-correct flex-col flex-cen_cen">
+                <span id="correct-answer">0</span>
+                <img class="img50 ico" src="/assets/img/like_ico.svg" alt="" />
+              </div>
+              <input id="intup-answer-field" type="text" placeholder="Ответ" />
+              <div class="like-box like-box-wrong flex-col flex-cen_cen">
+                <span id="wrong-answer">0</span>
+                <img
+                  class="img50 ico"
+                  src="/assets/img/dislike_ico.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="control-buttons df">
+              <button id="check-test-btn">Проверить</button>
+              <button id="openDrawWindow">
+                <img class="ico img75" src="/assets/img/draw_ico.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="heading df fixed-bot flex-cen_cen" id="scroll-top">
+        <a href="#">^ Вверх ^</a>
+      </div>
+      <div id="drawWindow">
+        <div id="toolbar" class="df">
+          <div class="toolbar-leftSide">
+            <button id="eraseButton" class="toolbar-btn">
+              <img class="ico" src="/assets/img/eraser_ico.svg" alt="" />
+            </button>
+            <button id="clearAreaButton" class="toolbar-btn">
+              <img class="ico" src="/assets/img/clearAll_ico.svg" alt="" />
+            </button>
+          </div>
+          <h3 class="blackPaper">Черновик</h3>
+          <div class="toolbar-rightSide">
+            <button id="hideButton" class="toolbar-btn">
+              <img class="ico" src="/assets/img/hide_ico.svg" alt="" />
+            </button>
+            <button id="closeButton" class="toolbar-btn">
+              <img class="ico" src="/assets/img/close_ico.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div id="iframeContainer">
+          <iframe
+            id="drawingFrame"
+            width="100%"
+            height="100%"
+            src="/pages/gyms/drawing.html"
+            scrolling="yes"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <script>
+      // Функция для получения параметра из URL
+      function getUrlParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        console.log(urlParams.get(name));
+        return urlParams.get(name);
+      }
+
+      // Определяем текущую тему
+      const currentTheme = getUrlParam("theme") || "1";
+
+      // Загружаем соответствующий файл с тестами
+      const script = document.createElement("script");
+      script.src = `test/test-${currentTheme}.js`;
+      script.type = `module`;
+      document.head.appendChild(script);
+    </script>
+    <script type="module" src="/js/main.js" defer></script>
+    <script src="/js/logic/eraseBtn.js"></script>
+    <script src="/js/logic/drawWindowBtn.js"></script>
+    <script src="/js/logic/opacityButton.js"></script>
+    <script src="/js/logic/clearAllBtn.js"></script>
+    <script src="/js/logic/goTopAnimation.js"></script>
+  </body>
+</html>

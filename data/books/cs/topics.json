@@ -1,0 +1,58 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "title": "1 Уровень",
+      "topics": [
+        {
+          "id": "computer-basics-1",
+          "title": "Основы компьютера",
+          "caption": "Части компьютера; клавиатура; мышь; монитор; принтер",
+          "grade": "1 класс",
+          "contentPath": "/data/books/cs/content/computer-basics-1.html"
+        },
+        {
+          "id": "algorithms-1",
+          "title": "Алгоритмы",
+          "caption": "Что такое алгоритм; пошаговые инструкции; выполнение команд",
+          "grade": "1 класс",
+          "contentPath": "/data/books/cs/content/algorithms-1.html"
+        },
+        {
+          "id": "logic-games-1",
+          "title": "Логические игры и головоломки",
+          "caption": "Развитие логического мышления; задачи на логику",
+          "grade": "1 класс",
+          "contentPath": "/data/books/cs/content/logic-games-1.html"
+        }
+      ]
+    },
+    {
+      "id": "level-2",
+      "title": "2 Уровень",
+      "topics": [
+        {
+          "id": "programming-basics-2",
+          "title": "Основы программирования",
+          "caption": "Команды; программа; последовательность действий",
+          "grade": "2 класс",
+          "contentPath": "/data/books/cs/content/programming-basics-2.html"
+        },
+        {
+          "id": "scratch-intro-2",
+          "title": "Введение в Scratch",
+          "caption": "Блоки; спрайты; создание простых программ",
+          "grade": "2 класс",
+          "contentPath": "/data/books/cs/content/scratch-intro-2.html"
+        },
+        {
+          "id": "coding-games-2",
+          "title": "Программирование через игры",
+          "caption": "Code.org; Hour of Code; первые проекты",
+          "grade": "2 класс",
+          "contentPath": "/data/books/cs/content/coding-games-2.html"
+        }
+      ]
+    }
+  ]
+}

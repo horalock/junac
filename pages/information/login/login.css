@@ -1,0 +1,46 @@
+.heading {
+  align-items: center;
+  padding: 20px 24px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#login_container {
+  width: 80%;
+  padding: 0 20px 20px;
+  gap: 16px;
+}
+
+#login_container h2 {
+  margin: 0;
+}
+
+#login-word {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid var(--main-el-color);
+  border-radius: 16px;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+#login-btn {
+  padding: 16px;
+  width: 300px;
+  text-align: center;
+  background-color: var(--main-el-color);
+  color: var(--just-white);
+  border: none;
+  border-radius: 16px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .guides .guide-box {
+    flex: 0 100%;
+    margin-bottom: 20px;
+  }
+}

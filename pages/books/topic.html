@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Тема — Юнак</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/multi-col.css" />
+    <link rel="stylesheet" href="/css/content.css" />
+    <link rel="stylesheet" href="/css/premade.css" />
+    <link rel="stylesheet" href="/css/precode.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+
+    <style>
+      .topic-links {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 2px solid #e0e0e0;
+      }
+      .topic-links h3 {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+      }
+      .topic-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .topic-links li {
+        margin-bottom: 0.75rem;
+      }
+      .topic-links a {
+        color: var(--link-color, #0077cc);
+        text-decoration: none;
+      }
+      .topic-links a:hover {
+        text-decoration: underline;
+      }
+      .topic-links small {
+        display: block;
+        color: #666;
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+      }
+      /* Глобальная защита от вылета */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box; /* 🔥 Критично: padding входит в width */
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="ju_container">
+        <div class="heading df">
+          <a id="back-link" href="/pages/books/books.html">Назад</a>
+          <a href="/pages/information/lessons/lessons.html">Предметы</a>
+          <a href="/pages/guides.html">Полигон</a>
+        </div>
+      </div>
+
+      <div class="ju_container">
+        <article id="topic-content" class="content">
+          <h1 id="topic-title">Загрузка темы...</h1>
+          <div id="topic-body"></div>
+
+          <!-- блок со ссылками по теме -->
+          <div
+            id="topic-links-container"
+            class="topic-links"
+            aria-live="polite"
+          ></div>
+        </article>
+      </div>
+
+      <a href="#" id="scroll-top">
+        <div class="heading df fixed-bot flex-cen_cen">^ Вверх ^</div>
+      </a>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <script type="module">
+      import { initTopic } from "/js/books/topicLoader.js";
+      initTopic();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("click", function (e) {
+          if (e.target && e.target.classList.contains("solution-toggle")) {
+            const button = e.target;
+            const solution = button.nextElementSibling;
+
+            if (solution.style.display === "block") {
+              solution.style.display = "none";
+              button.textContent = "Показать решение";
+            } else {
+              solution.style.display = "block";
+              button.textContent = "Скрыть решение";
+            }
+          }
+        });
+        
+      });
+    </script>
+    <script src="/js/logic/goTopAnimation.js"></script>
+  </body>
+</html>

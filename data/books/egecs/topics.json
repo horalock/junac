@@ -1,0 +1,199 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "title": "Подготовка к ЕГЭ. Время экзамена 3:55, 27 заданий",
+      "topics": [
+        {
+          "id": "egecs-part1-1",
+          "title": "Задание 1. Графы",
+          "caption": "Уровень базовый, 1 балл, 3 минуты",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/2ex-ege-tablicy-istinnosti.html"
+        },
+        {
+          "id": "egecs-part2-1",
+          "title": "Задание 2. Логические выражения и таблицы истинности",
+          "caption": "Уровень базовый, 1 балл, 3 минуты",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/2ex-ege-tablicy-istinnosti.html"
+        },
+        {
+          "id": "egecs-part3-1",
+          "title": "Задание 3. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part4-1",
+          "title": "Задание 4. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part5-1",
+          "title": "Задание 5. Алгоритмы обработки числа",
+          "caption": "Уровень базовый, 1 балл, 4 минуты",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/5ex-ege-obrabotka-chisel.html"
+        },
+        {
+          "id": "egecs-part6-1",
+          "title": "Задание 6. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part7-1",
+          "title": "Задание 7. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part8-1",
+          "title": "Задание 8. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part9-1",
+          "title": "Задание 9. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part10-1",
+          "title": "Задание 10. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part11-1",
+          "title": "Задание 11. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part12-1",
+          "title": "Задание 12. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part13-1",
+          "title": "Задание 13. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part14-1",
+          "title": "Задание 14. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part15-1",
+          "title": "Задание 15. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part16-1",
+          "title": "Задание 16. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part17-1",
+          "title": "Задание 17. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part18-1",
+          "title": "Задание 18. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part19-1",
+          "title": "Задание 19. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part20-1",
+          "title": "Задание 20. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part21-1",
+          "title": "Задание 21. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part22-1",
+          "title": "Задание 22. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part23-1",
+          "title": "Задание 23. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part24-1",
+          "title": "Задание 24. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part25-1",
+          "title": "Задание 25. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part26-1",
+          "title": "Задание 26. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        },
+        {
+          "id": "egecs-part27-1",
+          "title": "Задание 27. ",
+          "caption": "Программирование; алгоритмы; сложные задачи",
+          "grade": "11 класс",
+          "contentPath": "/data/books/egecs/content/egecs-part2-1.html"
+        }
+      ]
+    }
+  ]
+}

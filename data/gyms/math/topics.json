@@ -1,0 +1,30 @@
+{
+  "levels": [
+    {
+      "id": "cl5",
+      "title": "5 класс",
+      "topics": [
+        {
+          "id": "numbers-5",
+          "title": "Числа11 и счёт — тренажёр",
+          "caption": "Упражнения на сравнение и порядок чисел",
+          "grade": "5 класс",
+          "contentPath": "/data/gyms/math/content/numbers-5.html"
+        }
+      ]
+    },
+    {
+      "id": "cl6",
+      "title": "6 класс",
+      "topics": [
+        {
+          "id": "percent-6",
+          "title": "Проценты — тренажёр",
+          "caption": "Нахождение процентов",
+          "grade": "6 класс",
+          "contentPath": "/data/gyms/math/content/percent-6.html"
+        }
+      ]
+    }
+  ]
+}

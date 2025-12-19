@@ -1,0 +1,62 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "title": "1 Уровень",
+      "topics": [
+        {
+          "id": "computer-basics-1",
+          "title": "Ма",
+          "caption": "Части компьютера; клавиатура; мышь; монитор; принтер",
+          "grade": "1 класс",
+          "contentPath": "/data/books/math/content/lvl-1-numbers-count-1.html",
+          "links": [
+            { "title": "Видео: Части компьютера", "href": "https://youtu.be/example1", "external": true, "rel": "noopener noreferrer" },
+            { "title": "Интерактивный тренажер", "href": "/pages/gyms/cs/gym-topic.html?id=computer-basics-1-gym&subject=cs", "external": false },
+            { "title": "Википедия: Компьютер", "href": "https://ru.wikipedia.org/wiki/Компьютер", "external": true, "note": "Подробная статья" }
+          ]
+        },
+        {
+          "id": "algorithms-1",
+          "title": "Алгоритмы",
+          "caption": "Что такое алгоритм; пошаговые инструкции; выполнение команд",
+          "grade": "1 класс",
+          "contentPath": "/data/books/cs/content/umnozenie-prost-drobi-na-celoe-chislo.html",
+          "links": [
+            { "title": "Презентация: Алгоритмы", "href": "/assets/presentations/algorithms-1.pptx", "external": false },
+            { "title": "Scratch примеры", "href": "https://scratch.mit.edu", "external": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-2",
+      "title": "2 Уровень",
+      "topics": [
+        {
+          "id": "computer-basics-1",
+          "title": "Основы компьютера",
+          "caption": "Части компьютера; клавиатура; мышь; монитор; принтер",
+          "grade": "1 класс",
+          "contentPath": "/data/books/cs/content/computer-basics-1.html",
+          "links": [
+            { "title": "Видео: Части компьютера", "href": "https://youtu.be/example1", "external": true, "rel": "noopener noreferrer" },
+            { "title": "Интерактивный тренажер", "href": "/pages/gyms/cs/gym-topic.html?id=computer-basics-1-gym&subject=cs", "external": false },
+            { "title": "Википедия: Компьютер", "href": "https://ru.wikipedia.org/wiki/Компьютер", "external": true, "note": "Подробная статья" }
+          ]
+        },
+        {
+          "id": "algorithms-1",
+          "title": "Алгоритмы",
+          "caption": "Что такое алгоритм; пошаговые инструкции; выполнение команд",
+          "grade": "1 класс",
+          "contentPath": "/data/books/cs/content/algorithms-1.html",
+          "links": [
+            { "title": "Презентация: Алгоритмы", "href": "/assets/presentations/algorithms-1.pptx", "external": false },
+            { "title": "Scratch примеры", "href": "https://scratch.mit.edu", "external": true }
+          ]
+        }
+      ]
+    }
+  ]
+}

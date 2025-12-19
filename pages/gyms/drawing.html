@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажеры</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/gym.css" />
+    <link rel="stylesheet" href="/css/premade.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #canvasContainer {
+        height: 100vh;
+        /* width: 100%; */
+      }
+
+      canvas {
+        display: block;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="canvasContainer">
+      <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    </div>
+    <script>
+      const canvas = document.getElementById("drawingCanvas");
+      const context = canvas.getContext("2d");
+      let drawing = false;
+      let eraseMode = false;
+      let points = [];
+
+      context.lineWidth = 3;
+
+      canvas.addEventListener("mousedown", startDrawing);
+      canvas.addEventListener("mousemove", draw);
+      canvas.addEventListener("mouseup", endDrawing);
+      canvas.addEventListener("mouseout", endDrawing);
+
+      canvas.addEventListener("touchstart", startDrawing);
+      canvas.addEventListener("touchmove", draw);
+      canvas.addEventListener("touchend", endDrawing);
+      canvas.addEventListener("touchcancel", endDrawing);
+      function startDrawing(e) {
+        drawing = true;
+        draw(e);
+      }
+
+      function draw(e) {
+        if (!drawing) return;
+        if (eraseMode) {
+          context.lineWidth = 12;
+          context.globalCompositeOperation = "destination-out";
+          context.arc(e.offsetX, e.offsetY, 8, 0, Math.PI * 2, false);
+          context.fill();
+        } else {
+          context.lineWidth = 3;
+          context.globalCompositeOperation = "source-over";
+          context.lineTo(e.offsetX, e.offsetY);
+          context.stroke();
+        }
+        const rect = canvas.getBoundingClientRect();
+        points.push({
+          x: e.clientX || e.touches[0].clientX - rect.left,
+          y: e.clientY || e.touches[0].clientY - rect.top,
+        });
+
+        e.preventDefault();
+        if (points.length < 2) return;
+        context.beginPath();
+        context.moveTo(points[0].x, points[0].y);
+
+        for (let i = 1; i < points.length - 2; i++) {
+          const xc = (points[i].x + points[i + 1].x) / 2;
+          const yc = (points[i].y + points[i + 1].y) / 2;
+          context.quadraticCurveTo(points[i].x, points[i].y, xc, yc);
+        }
+        context.quadraticCurveTo(
+          points[points.length - 2].x,
+          points[points.length - 2].y,
+          points[points.length - 1].x,
+          points[points.length - 1].y
+        );
+        context.stroke();
+      }
+      function endDrawing() {
+        drawing = false;
+        points = [];
+        context.beginPath();
+      }
+
+      function setEraseMode() {
+        eraseMode = !eraseMode;
+      }
+      function clearAllDrawings() {
+        context.clearRect(0, 0, 800, 600);
+      }
+      window.setEraseMode = setEraseMode;
+      window.clearAllDrawings = clearAllDrawings;
+    </script>
+  </body>
+</html>

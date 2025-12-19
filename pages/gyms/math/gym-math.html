@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажеры | Математика</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/one-col.css" />
+    <link rel="stylesheet" href="/css/premade.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+  </head>
+
+  <body id="math-gym">
+    <main>
+      <div class="ju_container">
+        <div class="heading df">
+          <a href="/pages/gyms/gyms.html">Назад</a>
+          <a href="/pages/guides.html">Начало</a>
+          <a href="/pages/login/login.html">Вход</a>
+        </div>
+      </div>
+        <div class="instructions df">
+          <div>
+            <h1>Математика</h1>
+            <div class="search-box" id="gym-search-box">
+              <input
+                type="text"
+                id="search-input"
+                class="search-input"
+                placeholder="Поиск по темам тренажеров..."
+                autocomplete="off"
+              />
+              <button
+                id="clear-search"
+                class="search-clear"
+                aria-label="Очистить"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        <div id="gymThemes" class="w100">
+          <!-- Список тем будет загружен через JS -->
+        </div>
+      </div>
+      <div class="heading df fixed-bot flex-cen_cen" id="scroll-top">
+        <a href="#">^ Вверх ^</a>
+      </div>
+    </main>
+    <script type="module">
+      import { initSubjectGyms } from "/js/gyms/subjectGymsLoader.js";
+      initSubjectGyms("#gymThemes", "math");
+    </script>
+
+    <script src="/js/logic/goTopAnimation.js"></script>
+  </body>
+</html>

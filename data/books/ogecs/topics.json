@@ -1,0 +1,24 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "title": "Подготовка к ОГЭ",
+      "topics": [
+        {
+          "id": "ogecs-part1-1",
+          "title": "Часть 1: Задания 1-15",
+          "caption": "Базовые задания; информация; кодирование",
+          "grade": "9 класс",
+          "contentPath": "/data/books/ogecs/content/ogecs-part1-1.html"
+        },
+        {
+          "id": "ogecs-part2-1",
+          "title": "Часть 2: Задание 16",
+          "caption": "Программирование; написание программы",
+          "grade": "9 класс",
+          "contentPath": "/data/books/ogecs/content/ogecs-part2-1.html"
+        }
+      ]
+    }
+  ]
+}
