@@ -1,0 +1,159 @@
+
+@media screen and (max-width: 1024px) {
+  /* .heading {
+    padding: 12px 20px;
+  } */
+
+  .tests > h1 {
+    font-size: 1.6rem;
+  }
+
+  #test-area.quest {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .guides {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .df {
+    flex-direction: column;
+  }
+  .img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  #intup-answer-field {
+    width: 60%;
+    min-width: 180px;
+  }
+
+  #test-area {
+    font-size: 1.6rem;
+  }
+
+  .tests h1 {
+    font-size: 1.3rem;
+  }
+
+  .tests {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .input-field,
+  #login_container,
+  .main-bnr {
+    width: 100%;
+  }
+
+  .main-bnr h1 {
+    font-size: 22px;
+  }
+
+  .ju_link {
+    width: 100%;
+  }
+
+  .ju_link-text h2 {
+    font-size: 18px;
+  }
+
+  .ju_link-text p {
+    font-size: 14px;
+  }
+
+  .ju_link > a {
+    gap: 30px;
+  }
+
+  p {
+    padding: 8px 0;
+  }
+
+  .heading {
+    width: 100%;
+    padding: 8px 12px;
+  }
+
+  summary {
+    font-size: 16px;
+  }
+
+  .instruction-box-caption {
+    display: none;
+  }
+
+  #test-area.quest {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .blackPaper {
+    font-size: 1rem;
+  }
+
+  #drawWindow {
+    width: 90vw;
+  }
+  #drawWindow.drawWindowActive {
+    height: calc(70vh + 68px);
+  }
+
+  #drawWindow.alignTop {
+    height: 68px;
+  }
+
+  #iframeContainer {
+    height: 70vh;
+  }
+
+  code span, code[class*="language-"] {
+  font-size: 14px;
+}
+}
+
+@media (max-width: 480px) {
+  .guides {
+    grid-template-columns: 1fr;
+  }
+}
+@media (orientation: landscape) {
+  /* Стили для горизонтальной ориентации */
+
+
+  @media screen and (max-height: 500px) {
+    .ju_container {
+      padding-top: 8px;
+    }
+    main {
+      padding-top: 8px;
+    }
+    #test-area {
+      padding-bottom: 16px;
+      font-size: 1.5rem;
+    }
+    .tests > h1 {
+      font-size: 1.4rem;
+    }
+    .tests {
+      margin-top: 0;
+    }
+  }
+}
+@media (orientation: portrait) {
+  /* Стили для вертикальной ориентации */
+  
+}
+@media screen and (max-width: 360px) {
+}

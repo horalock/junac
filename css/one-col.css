@@ -1,0 +1,79 @@
+.heading {
+  align-items: center;
+  padding: 20px 24px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.instructions {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+}
+
+.instruction-box {
+  width: 100%;
+  display: inline-block;
+  background-color: var(--instruction-box-border-color);
+  transition: 0.2s;
+  padding: 12px 28px;
+  border-radius: 8px;
+  flex: 0 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--just-black);
+  border: 1px solid var(--no-color);
+  margin-bottom: 12px;
+}
+
+.instruction-box-title {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  display: block;
+  font-weight: 600;
+}
+
+.instructions .instruction-box:hover {
+  border: 1px solid var(--main-el-color-op);
+}
+
+.instruction-box-caption {
+  color: var(--instruction-box-caption-color);
+  line-height: 1.5;
+}
+
+#gymThemes {
+  padding-top: 20px;
+}
+
+#pathSearch-container {
+  position: relative;
+  padding: 16px 0;
+}
+
+#pathSearch-input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid var(--main-el-color);
+  border-radius: 16px;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+#pathSearch-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  height: 44px;
+  padding: 0px 16px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  background: var(--main-el-color);
+  color: var(--just-white);
+  font-size: 1.2rem;
+}

@@ -1,0 +1,48 @@
+.heading {
+  align-items: center;
+  /* padding: 20px 24px; */
+  gap: 40px;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid #4e00ad;
+}
+
+.instructions {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.instruction-box {
+  display: block;
+  background-color: var(--instruction-box-border-color);
+  transition: .2s;
+  padding: 12px 28px;
+  border-radius: 8px;
+  flex: 0 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--just-black);
+  border: 1px solid var(--no-color);
+  margin-bottom: 12px;
+}
+
+.instruction-box-title {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+  display: block;
+}
+
+.instructions .instruction-box:hover {
+  border: 1px solid var(--main-el-color-op);
+}
+
+.instruction-box-caption {
+  color: var(--instruction-box-caption-color);
+  line-height: 1.5;
+}
+
+.mwh200 {
+  min-width: 200px;
+  max-height: 200px;
+}

@@ -1,0 +1,51 @@
+.heading {
+  align-items: center;
+  /* padding: 20px 24px; */
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.guide-box {
+  /* width: 30%; */
+  background-color: var(--instruction-box-border-color);
+  transition: .2s;
+  padding: 16px 20px;
+  border-radius: 8px;
+  flex: 0 32%;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--just-black);
+  border: 1px solid var(--no-color);
+  margin-bottom: 16px;
+}
+
+.guide-box-title {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+  display: block;
+}
+
+.guides .guide-box:hover {
+  border: 1px solid var(--main-el-color-hover);
+}
+
+
+.guide-box-caption {
+  color: var(--instruction-box-caption-color);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .guides .guide-box {
+      flex: 0 100%;
+      margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,255 @@
+.heading {
+  align-items: center;
+  padding: 20px 24px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.tests {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#toolbar, .tests, .heading {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#test-area {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 26px;
+  padding-top: 8px;
+}
+
+#gymId {
+  font-size: 32px;
+}
+
+.test-control {
+  align-items: center;
+  gap: 20px;
+}
+
+#check-test-btn,
+#openDrawWindow {
+  padding: 16px;
+  text-align: center;
+  background-color: var(--main-el-color);
+  color: var(--just-white);
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#openDrawWindow {
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ju-light-gray);
+}
+
+#openDrawWindow:hover {
+  background-color: var(--ju-light-gray-hover);
+}
+
+#drawingFrame {
+  border: 1px solid #c1c1c1;
+  height: 100%;
+}
+
+.control-buttons {
+  justify-content: space-evenly;
+  gap: 12px;
+}
+
+#check-test-btn:hover,
+summary:hover {
+  background-color: var(--main-el-color-hover);
+}
+
+#drawWindow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--just-white);
+  transform: translate(-50%, -50%);
+  height: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 800px;
+  box-shadow: 2px 2px 10px 0px #00000080;
+  transition: 0.5s;
+  opacity: 0;
+  width: 80vw;
+}
+
+#drawWindow.drawWindowActive {
+  opacity: 1;
+  height: calc(50vh + 68px);
+}
+
+#iframeContainer {
+  height: 50vh;
+  transition: 0.5s;
+  border: none;
+}
+
+.toolbar-btn {
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--ju-light-gray);
+  transition: 0.3s;
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toolbar-btn:hover {
+  color: var(--just-white);
+  background-color: var(--ju-light-gray-hover);
+}
+
+#eraseButton.eraseActive {
+  background-color: var(--main-el-color);
+}
+
+.eraseActive img {
+  filter: invert(1) brightness(2);
+}
+
+#iframeContainer.hide {
+  height: 0;
+}
+
+#drawWindow.alignTop.drawWindowActive {
+  top: 10%;
+  height: 68px;
+}
+
+#drawWindow.alignTop {
+  top: -10%;
+}
+
+#closeButton {
+  background-color: var(--just-black);
+  color: var(--just-white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#closeButton:hover {
+  background-color: var(--mistake-color);
+}
+
+.blackPaper {
+  margin: 0;
+}
+
+#toolbar {
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--just-white);
+  padding: 4px 8px;
+  height: 68px;
+}
+
+.test-control {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+details {
+  width: 100%;
+}
+
+summary {
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 12px;
+  border-radius: 12px;
+  color: var(--just-white);
+  font-size: 18px;
+  background-color: var(--main-el-color);
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 56px;
+  width: 56px;
+}
+
+@supports selector(::marker) {
+  summary {
+    list-style: none;
+  }
+}
+
+@supports not selector(::marker) {
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+#hideButton {
+  transition: 0.5s;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+#correct-answer,
+#wrong-answer {
+  padding: 8px;
+  text-align: center;
+  line-height: 0.7;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.like-box {
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+}
+
+.like-box-wrong {
+  background-color: var(--ju-low-red);
+}
+
+.like-box-correct {
+  background-color: var(--ju-low-green);
+}
+
+#test-area.quest {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.like-box {
+  width: fit-content;
+  height: 72px;
+}
+
+.test-answer-row {
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 8px;
+}
+
+.tests > h1 {
+  margin-bottom: 8px;
+}
